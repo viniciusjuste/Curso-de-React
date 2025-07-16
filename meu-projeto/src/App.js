@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Soma: {soma(1, 2)}</h1>
+        <HelloWorld />
       </header>
     </div>
   );
