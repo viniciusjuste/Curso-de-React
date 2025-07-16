@@ -1,19 +1,16 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-
-  const name = "Vinícius"
-  const soma = (a, b) => {
-    return a + b;
-  }
+  const name = "Maria"
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Soma: {soma(1, 2)}</h1>
-        <HelloWorld />
-      </header>
+      <SayMyName name="Vinícius" />
+      <SayMyName name="Lara" />
+      <SayMyName name={name} />
+      <Pessoa name="Vinícius" age={32} profession="Desenvolvedor" photo="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
     </div>
   );
 }
