@@ -5,8 +5,8 @@ const List = () => {
         <>
         <h1>Minha Lista</h1>
         <ul>
-            <Item marca="Ferrari" />
-            <Item marca="Fiat" />
+            <Item />
+            <Item marca="Fiat" ano_lancamento={1964} />
         </ul>
         </>
     );

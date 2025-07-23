@@ -1,9 +1,14 @@
-const Item = (props) => {
-    return (
-        <>
-            <li>{props.marca}</li>
-        </>
-    );
-}
+import PropTypes from 'prop-types';
 
-export default Item
+const Item = ({ marca, ano_lancamento }) => {
+    return (
+        <li>{marca} - {ano_lancamento}</li>
+    );
+};
+
+Item.propTypes = {
+    marca: PropTypes.string.isRequired,
+    ano_lancamento: PropTypes.number.isRequired,
+};
+
+export default Item;
